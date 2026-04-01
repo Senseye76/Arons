@@ -1,14 +1,98 @@
 .site-header ul {
   display: flex;
-  border: 1px solid black;
-  background-color: rgb(10, 23, 4);
+  background-color: #023020;
   list-style: none;
   padding: 10px;
   gap: 20px;
   justify-content: space-between;
   
+  
 }
 .site-header ul a {
-    color: rgb(225, 182, 47);
+    color: #d4a373;
     text-decoration: none;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4a373;
+}
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.bg-video2 {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  z-index: -2;
+}
+
+.overlay .overlay2 {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+
+.content .brands-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.container-about-me
+.about-me, .my-approach {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 50px;
+    background:  #023020;
+    color: #d4a373;
+}
+.container-brands {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4a373;
+}
+.brands-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.brands-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1em;
+  margin: 0;
+  line-height: 0.9;
+  color: #d4a373;
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(212, 163, 115, 0.35);
+}
+
+.brands-title span {
+  display: block;
 }
